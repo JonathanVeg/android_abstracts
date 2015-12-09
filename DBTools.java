@@ -5,8 +5,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.laivon.street.abstracts.Globals;
-
 public class DBTools {
 
     /*
@@ -24,11 +22,6 @@ public class DBTools {
 
     public DBTools(Context context, String dbName) {
         dbCreate = new CreateDatabase(context, dbName);
-    }
-
-
-    public DBTools(Context context) {
-        this(context, Globals.dbName);
     }
 
     public boolean exec(String sql) {
