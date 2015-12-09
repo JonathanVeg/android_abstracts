@@ -74,7 +74,7 @@ public class InternetRequests {
     // obviamente precisa de um numero par de parametros (mas n tratei isso ainda)
     // Exemplo:
     // makeParams("nome", "Jonathan", "idade", "22")
-    public Map<String, String> makeParams(String... vars) throws Exception {
+    public Map<String, String> makeParams(String... vars) {
         params = new HashMap<>();
 
         for (int i = 0; i < vars.length; i += 2) {
