@@ -1,4 +1,3 @@
-
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -26,7 +25,10 @@ public class InternetRequests {
     *
     * compile 'com.mcxiaoke.volley:library:1.0.17'
     *
+    * MyApplication é uma classe declarada como application no manifest que salva a instancia da RequestQueue.
     *
+    * basicamente, se ela n existe é criada e se existe ele retorna ela, garantindo uma instancia só pra toda a aplicação
+    * 
     * */
 
     Map<String, String> params;
